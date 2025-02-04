@@ -63,7 +63,7 @@ struct ContentView: View {
                         .focused($isVehiclePriceFocused)
                 }
                 //MARK: - Contract length
-                Section("contract length") {
+                Section("contract period") {
                     Picker("Enter the number of months", selection: $repaymentPeriod) {
                         ForEach(12..<73) { month in
                             Text("\(month) months").tag(Double(month))
